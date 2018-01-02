@@ -1,7 +1,7 @@
-all: cpu gpu
+all: release/cpu/run release/gpu/run
 
-cpu: release/cpu/config
+release/cpu/run: release/cpu/config
 	echo "run cpu test"
 
-gpu: release/cpu/config
+release/gpu/run: release/gpu/config
 	echo "run gpu test"
