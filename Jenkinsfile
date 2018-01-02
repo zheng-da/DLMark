@@ -5,7 +5,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing..'
-                sh 'discover_last.sh'
+                sh './discover_last.sh'
                 sh 'make'
             }
         }
